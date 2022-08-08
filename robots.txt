@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://idprov.github.io/sitemap.xml
+Sitemap: https://linkalternateidslotpro.github.io/sitemap.xml
