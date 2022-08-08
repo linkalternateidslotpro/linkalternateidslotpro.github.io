@@ -1,0 +1,195 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+a {
+    transition: all .2s linear;
+}
+
+.projects-tags {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.projects-tags button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 3px;
+    padding: 5px 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    border: 2px #333 solid;
+}
+
+.projects-tags button.active {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project {
+    width: 31.333%;
+    float: left;
+    margin: 1%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 5px -5px rgb(0 0 0 / 30%);
+    font-size: 0;
+}
+
+.project:hover img {
+    transform: scale(1.2) rotate(3deg);
+}
+
+.project img {
+    max-width: 100%;
+    transition: all .4s ease;
+}
+
+.project:hover .project-info {
+    bottom: 0;
+}
+
+.project:hover .project-info p {
+    opacity: 1;
+}
+
+
+
+
+.project-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: calc(-100% + 65px);
+    padding: 10px 30px;
+    background: rgb(0 0 0 / 82%);
+    transition: all .4s ease;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.project-info h3 {
+    color: #ff00b1;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 15px 0;
+}
+
+.project-info p {
+    transition: all 1s ease;
+    opacity: 0;
+    color: #fff;
+}
+
+.project-info .tags {
+    position: absolute;
+    top: 5px;
+    left: -14px;
+}
+.titelimg {
+    width: 43%;
+    transform: scale(1.2) rotate(0deg) !important;
+}
+
+
+
+.project-info .tag {
+    display: inline-block;
+    background: #850d0d;
+    color: #fff;
+    font-size: 13px;
+    line-height: 10px;
+    margin: 0 3px;
+    padding: 4px 7px;
+    font-weight: 400;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.project-info .project-btn {
+    background: #2d1d8b;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 25px;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 20px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.project-info .project-btn:hover {
+    background: #fff;
+    color: #333;
+}
+
+
+
+.fa {
+    margin: 0 5px;
+}
+
+.project-btns {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-info .project-btns li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* partikel */
+
+
+/* partikel end */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
+    .project {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project {
+        width: 76%;
+        margin: 2% auto;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .project {
+        width: 96%;
+    }
+
+    .project-info {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

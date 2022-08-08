@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Alice:300,400,600,700&&display=swap');
+
+/*Required CSS*/
+svg.radial-progress{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    height: auto;
+    max-width: 240px;
+    padding: 0;
+    transform: rotate(-90deg);
+    width: 16%;
+    background-image: linear-gradient(-225deg,#FF057C 0%,#8D0B93 50%,#321575 100%);
+    border-radius: 50%;
+}
+section.svg-container svg.radial-progress:nth-child(even) {margin: 0 15px;}
+svg.radial-progress circle{
+    fill:transparent;stroke:#fff;}
+svg.radial-progress circle.bar-static{
+    stroke:#fafafa!important;}
+svg.radial-progress circle.bar--animated{
+    stroke-dasharray:274.91148575129;
+    stroke:#00ff15;
+    stroke-dashoffset:219.91148575129;
+    stroke-width:8px;stroke-linecap:round;}
+svg.radial-progress text{
+    fill:#fafafa;
+    font-family:Roboto;
+    font-size:16px;font-weight:700;
+    text-anchor:middle;
+    text-shadow:0 0 5px #0000007a;}
+
+/* progress bar rate */
+.progress-bar {
+    height: 14px;
+    width: 100%;
+    background-color: #ffffff !important;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 0 10px inset rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .bar {
+    width: 0;
+    height: 100%;
+    background-color: #005fff;
+    background-image: linear-gradient( -46deg, rgba(255, 255, 255, 0.2) 25%, transparent 41%, transparent 48%, rgba(255, 255, 255, 0.2) 46%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent );
+    background-size: 30px 30px;
+    animation: move 4s linear infinite;
+    box-shadow: 2px 0 10px inset rgb(0 0 0 / 20%);
+    transition: width 2s ease-out;
+  }
+  
+  /*Lollipop background gradient animation*/
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 30px 30px;
+    }
+  }
+  .perc {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-weight: bold;
+  }

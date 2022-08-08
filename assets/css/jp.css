@@ -1,0 +1,37 @@
+.wlr-total-jackpot__jackpot {
+    color: transparent;
+    font-size: 36px;
+    text-shadow: -1px 0px 9px #c33c1e, 1px 1px 0px #f42f03, 2px 0px 0px #f42f03, 1px -2px 0px #f42f03;
+    margin-bottom: 30px;
+}
+.wlr-total-jackpot__number{
+    text-shadow: -1px 0px 9px #f4cb03, 1px 1px 0px #f4ee03, 2px 0px 0px #f4cb03, 1px 0px 0px #dcf403;
+}
+.logo{
+width: 100%;
+    /* padding: 0 255px; */
+    margin: -24px 0;
+}
+
+.wlr-total-jackpot__jackpot{
+font-size: 40px;
+letter-spacing: 6px;
+color: #f1d4a9;
+height: 90px;
+padding-top: 20px;
+}
+
+@media screen and (min-width:240px) and (max-width: 420px) {
+.idr{
+    display:none;
+}
+.wlr-total-jackpot__number{
+    font-size: 20px !important;
+}
+.wlr-total-jackpot__jackpot{
+    font-size: 27px;
+    height: 45px !important;
+    padding: 0px !important;
+    margin: 0 !important;
+}
+}
